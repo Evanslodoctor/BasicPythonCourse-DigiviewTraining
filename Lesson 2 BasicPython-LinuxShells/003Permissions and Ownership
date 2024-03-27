@@ -1,0 +1,73 @@
+# Lesson: Permissions and Ownership
+
+## Introduction
+
+In this lesson, we'll explore the concepts of permissions and ownership in Linux. Understanding permissions and ownership is crucial for controlling access to files and directories on a Linux system.
+
+## Understanding File Permissions
+
+### Permission Types
+
+- Read (`r`): Allows reading the contents of a file or listing the contents of a directory.
+- Write (`w`): Allows modifying the contents of a file or adding, removing, and renaming files within a directory.
+- Execute (`x`): Allows executing a file or traversing a directory.
+
+### Permission Levels
+
+- User (Owner): Permissions for the file or directory owner.
+- Group: Permissions for users who are members of the file or directory group.
+- Others: Permissions for all other users.
+
+### Viewing Permissions
+
+- Syntax: `ls -l [file/directory]`
+- Examples:
+  - `ls -l file1.txt`: Display permissions for file1.txt.
+  - `ls -ld directory`: Display permissions for directory itself.
+
+## Changing File Permissions
+
+### `chmod` - Changing File Permissions
+
+- Syntax: `chmod [permissions] [file/directory]`
+- Examples:
+  - `chmod u+x file1.txt`: Add execute permission for the owner of file1.txt.
+  - `chmod g-w file1.txt`: Remove write permission for the group of file1.txt.
+
+## Understanding File Ownership
+
+### User Ownership
+
+- Each file and directory is associated with a user owner.
+- The user owner has full control over the file or directory.
+
+### Group Ownership
+
+- Each file and directory is associated with a group owner.
+- Users who are members of the group owner may have additional permissions.
+
+### Viewing Ownership
+
+- Syntax: `ls -l [file/directory]`
+- Examples:
+  - `ls -l file1.txt`: Display ownership information for file1.txt.
+  - `ls -ld directory`: Display ownership information for directory itself.
+
+## Changing File Ownership
+
+### `chown` - Changing User Ownership
+
+- Syntax: `chown [user] [file/directory]`
+- Examples:
+  - `chown user1 file1.txt`: Change the user owner of file1.txt to user1.
+  - `chown user1:group1 file1.txt`: Change both the user owner and group owner of file1.txt.
+
+### `chgrp` - Changing Group Ownership
+
+- Syntax: `chgrp [group] [file/directory]`
+- Examples:
+  - `chgrp group1 file1.txt`: Change the group owner of file1.txt to group1.
+
+## Conclusion
+
+This lesson covers the fundamental concepts of permissions and ownership in Linux. By understanding how permissions and ownership work, you'll be able to effectively control access to files and directories on your Linux system.

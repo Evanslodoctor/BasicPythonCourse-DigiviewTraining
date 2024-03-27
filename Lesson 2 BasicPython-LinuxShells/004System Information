@@ -1,0 +1,48 @@
+# Lesson: System Information
+
+## Introduction
+
+In this lesson, we'll learn how to gather various system information in Linux. Understanding system information is essential for troubleshooting, system monitoring, and general system administration tasks.
+
+## Checking System Information
+
+### `uname` - Print System Information
+
+- Syntax: `uname [options]`
+- Examples:
+  - `uname -a`: Display all system information.
+  - `uname -r`: Display the kernel release.
+
+### `hostname` - Display System Hostname
+
+- Syntax: `hostname [options]`
+- Examples:
+  - `hostname`: Display the system hostname.
+  - `hostname -I`: Display the system IP address.
+
+## Viewing Hardware Information
+
+### `lscpu` - Display CPU Information
+
+- Syntax: `lscpu [options]`
+- Examples:
+  - `lscpu`: Display detailed CPU information.
+  - `lscpu -e`: Display information about each CPU.
+
+### `lsblk` - List Block Devices
+
+- Syntax: `lsblk [options]`
+- Examples:
+  - `lsblk`: Display information about block devices.
+  - `lsblk -a`: Display all devices, including empty ones.
+
+### `lshw` - List Hardware Information
+
+- Syntax: `lshw [options]`
+- Examples:
+  - `lshw`: Display detailed hardware information.
+  - `lshw -short`: Display a short summary.
+
+## Conclusion
+
+This lesson covers various commands to gather system and hardware information in Linux. Understanding these commands will enable you to effectively monitor and manage your Linux system.

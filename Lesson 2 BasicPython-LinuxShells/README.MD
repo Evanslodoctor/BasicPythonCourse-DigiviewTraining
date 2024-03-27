@@ -44,3 +44,5 @@ Here are some simple Linux commands along with their descriptions:
 10. **grep**: Global Regular Expression Print - Searches for patterns in files. For example, `grep "pattern" file1.txt` searches for the specified pattern in "file1.txt".
 
 These are just a few basic commands to get you started with Linux. There are many more commands available, each serving different purposes and functionalities.
+
+

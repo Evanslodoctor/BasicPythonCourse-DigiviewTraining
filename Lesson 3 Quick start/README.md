@@ -193,18 +193,55 @@ Here, x is assigned the integer value 5, and y is assigned the string value "Hel
 
 You will learn more about variables in the Python Variables chapter, including different data types, variable naming conventions, and variable scope.
 
-# Comments in Python
+# Python Comments
 
-In Python, comments are used for in-code documentation and are ignored by the interpreter during execution. They are useful for explaining the purpose of code, making notes, or temporarily disabling code.
+Comments can be used to explain Python code.
 
-## Syntax
+Comments can be used to make the code more readable.
 
-Comments in Python start with the `#` symbol, followed by the comment text. Everything after the `#` on the same line is considered a comment.
+Comments can be used to prevent execution when testing code.
+
+## Creating a Comment
+
+Comments start with a `#`, and Python will ignore them:
 
 ```python
-# This is a comment.
+# This is a comment
 print("Hello, World!")
 ```
+
+Comments can be placed at the end of a line, and Python will ignore the rest of the line:
+```python
+print("Hello, World!")  # This is a comment
+```
+A comment does not have to be text that explains the code; it can also be used to prevent Python from executing code:
+```python
+# print("Hello, World!")
+print("Cheers, Mate!")
+```
+## Multiline Comments
+Python does not really have a syntax for multiline comments.
+
+To add a multiline comment, you could insert a # for each line:
+```python
+# This is a comment
+# written in
+# more than just one line
+print("Hello, World!")
+```
+Or, not quite as intended, you can use a multiline string.
+
+Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:
+
+```python
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!")
+```
+
 
 ## Best Practices
 
